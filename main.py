@@ -5,7 +5,7 @@ from inputs import devices
 from timer import Timer
 import time
 
-host_ip = '192.168.1.5'
+host_ip = '192.168.0.103'
 server_port = 12345
 
 class TR_Augerbot_Control:
