@@ -12,8 +12,8 @@ class TR_Augerbot_Control:
 
 	def __init__(self):
 		self.joystick_max_val = 32767
-		self.speed_limit = 10
-		self.deadzone = 2
+		self.speed_limit = 50
+		self.deadzone = 8
 
 		#Button codes for a logitech gamepad
 		#Trigger buttons: BTN_TL, BTN_TR, ABS_Z, ABS_RZ
@@ -104,9 +104,9 @@ class TR_Augerbot_Control:
 					if self.stop_btn_val == 1:
 						self.auger_slide_state = 0
 					elif self.up_btn_val == 1:
-						self.auger_slide_state = 2
-					elif self.down_btn_val == 1:
 						self.auger_slide_state = 1
+					elif self.down_btn_val == 1:
+						self.auger_slide_state = 2
 					else:
 						pass
 
